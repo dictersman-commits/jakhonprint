@@ -390,16 +390,12 @@ img { display: block; max-width: 100%; }
 .portfolio { background: var(--white); padding-bottom: 0; }
 .portfolio .container { padding-bottom: 0; }
 
-.portfolio-scroll { overflow-x: auto; padding-bottom: var(--section-v); }
-.portfolio-scroll::-webkit-scrollbar { height: 3px; }
-.portfolio-scroll::-webkit-scrollbar-track { background: var(--gray-100); }
-.portfolio-scroll::-webkit-scrollbar-thumb { background: var(--gray-400); }
+.portfolio-scroll { padding-bottom: var(--section-v); }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  min-width: 780px;
   padding: 0 var(--pad-x);
   max-width: var(--max-w);
   margin: 0 auto;
@@ -810,8 +806,9 @@ img { display: block; max-width: 100%; }
   .s-card--small { height: 180px; }
 
   .portfolio-grid {
-    grid-template-columns: repeat(2, 280px);
+    grid-template-columns: repeat(2, 1fr);
   }
+  .p-item { height: 220px; }
 
   .reasons-grid {
     grid-template-columns: 1fr;
@@ -847,7 +844,8 @@ img { display: block; max-width: 100%; }
   .s-card--large,
   .s-card--small { grid-column: span 1; height: 220px; }
 
-  .portfolio-grid { grid-template-columns: repeat(2, 240px); }
+  .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+  .p-item { height: 180px; }
 
   .stat-number { font-size: 24px; }
   .stat-label { font-size: 10px; }
