@@ -389,18 +389,9 @@ img { display: block; max-width: 100%; }
 /* ================================================
    PREMIUM SLIDER (inside services grid)
    ================================================ */
-.s-card--full {
-  grid-column: span 6;
-  height: 460px;
-  position: relative;
-  overflow: hidden;
-  background: var(--black);
-}
-
 .slider {
   position: relative;
   overflow: hidden;
-  height: 460px;
   background: var(--black);
 }
 
@@ -514,8 +505,6 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .s-card--full { grid-column: span 1; height: 300px; }
-  .slider { height: 300px; }
   .slider-btn { width: 40px; height: 40px; font-size: 16px; }
   .slider-btn--prev { left: 12px; }
   .slider-btn--next { right: 12px; }
